@@ -37,43 +37,26 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
     transition: all 0.3s ease;
     position: relative;
-    overflow: hidden;
-}
-
-nav ul li a:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #ffffff;
-    transition: width 0.3s ease;
-}
-
-nav ul li a:hover:before {
-    width: 100%;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
     background-color: #4a3380;
-    transform: translateY(-2px);
 }
 
 main {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 0 1rem;
+    animation: fadeIn 0.5s ease forwards;
     opacity: 0;
     transform: translateY(20px);
-    animation: fadeIn 0.5s ease forwards;
 }
 
 @keyframes fadeIn {
@@ -84,82 +67,32 @@ main {
 }
 
 h1 {
+    text-align: center;
     color: #b19cd9;
-    text-align: center;
-    margin-bottom: 2rem;
     font-size: 2.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2rem;
 }
 
-.hero {
-    text-align: center;
-    position: relative;
-}
-
-.hero img,
-.character img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    margin-bottom: 1rem;
-    box-shadow: 0 4px 20px rgba(177, 156, 217, 0.3);
-    transition: transform 0.3s ease;
-}
-
-.hero img:hover,
-.character img:hover {
-    transform: scale(1.02);
-}
-
-.content,
-.story,
-.gameplay-features {
-    background-color: rgba(26, 19, 51, 0.8);
-    padding: 2rem;
-    border-radius: 12px;
-    margin-top: 2rem;
-    box-shadow: 0 4px 20px rgba(177, 156, 217, 0.1);
-    border: 1px solid rgba(177, 156, 217, 0.1);
-    backdrop-filter: blur(10px);
-}
-
-.gallery {
+#galeria {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
     padding: 1rem;
 }
 
-.gallery img {
+#galeria img {
     width: 100%;
-    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     border-radius: 12px;
-    transition: all 0.3s ease;
-    cursor: pointer;
     box-shadow: 0 4px 20px rgba(177, 156, 217, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
-.gallery img:hover {
+#galeria img:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 30px rgba(177, 156, 217, 0.3);
-}
-
-.gameplay-features ul {
-    list-style: none;
-    padding: 1rem;
-}
-
-.gameplay-features li {
-    margin: 1rem 0;
-    padding-left: 1.5rem;
-    position: relative;
-}
-
-.gameplay-features li:before {
-    content: '►';
-    color: #b19cd9;
-    position: absolute;
-    left: 0;
 }
 
 @media (max-width: 768px) {
@@ -175,4 +108,43 @@ h1 {
     h1 {
         font-size: 2rem;
     }
+}
+.hero {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(177, 156, 217, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.hero img:hover {
+    transform: scale(1.02);
+}
+
+.hero p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.imagem-vilao {
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(177, 156, 217, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.imagem-vilao:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(209, 191, 241, 0.3);
 }

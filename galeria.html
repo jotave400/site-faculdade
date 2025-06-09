@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tunic - Galeria</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup/dist/magnific-popup.css">
+
 </head>
 <body>
     <nav>
@@ -13,21 +15,51 @@
             <li><a href="sobre.html">Sobre o Jogo</a></li>
             <li><a href="personagem.html">Personagem</a></li>
             <li><a href="historia.html">História</a></li>
-            <li><a href="gameplay.html">Gameplay</a></li>
-            <li><a href="galeria.html" class="active">Galeria</a></li>
+            <li><a href="gameplay.html" class="active">Gameplay</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="minhaexp.html">Minha experiência</a></li>
         </ul>
     </nav>
-    <main>
-        <h1>Galeria de Imagens</h1>
-        <div class="gallery" id="gallery">
-            <img src="https://i.pinimg.com/736x/f3/25/f9/f325f95209809019c29b25f65fccad5d.jpg" alt="Imagem 1">
-            <img src="https://i.pinimg.com/736x/74/4b/29/744b29bdac1c74dafc72704788a54677.jpg" alt="Imagem 2">
-            <img src="https://i.pinimg.com/736x/3f/8a/48/3f8a48aa02c6735c0c24f6fee446ea78.jpg" alt="Imagem 3">
-            <img src="https://images7.alphacoders.com/129/1298681.jpg" alt="imagem 4">
-         <img src="https://i.etsystatic.com/40676628/r/il/80c7ba/4773873459/il_570xN.4773873459_rr8o.jpg" alt="imagem 5">
-         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1zvF3A2yC8eppAeEXqmcg-1qNwHgaWUP-0A&s" alt="imagem 6">     
+     <main>
+    <h1>Galeria de Imagens</h1>
+    <div id="fotos">
+        <div id="galeria">
+            <a href="https://i.pinimg.com/736x/f3/25/f9/f325f95209809019c29b25f65fccad5d.jpg">
+                <img src="https://i.pinimg.com/736x/f3/25/f9/f325f95209809019c29b25f65fccad5d.jpg" alt="Imagem 1">
+            </a>
+            <a href="https://i.pinimg.com/736x/74/4b/29/744b29bdac1c74dafc72704788a54677.jpg">
+                <img src="https://i.pinimg.com/736x/74/4b/29/744b29bdac1c74dafc72704788a54677.jpg" alt="Imagem 2">
+            </a>
+            <a href="https://i.pinimg.com/736x/3f/8a/48/3f8a48aa02c6735c0c24f6fee446ea78.jpg">
+                <img src="https://i.pinimg.com/736x/3f/8a/48/3f8a48aa02c6735c0c24f6fee446ea78.jpg" alt="Imagem 3">
+            </a>
+            <a href="https://images7.alphacoders.com/129/1298681.jpg">
+                <img src="https://images7.alphacoders.com/129/1298681.jpg" alt="Imagem 4">
+            </a>
+            <a href="https://i.etsystatic.com/40676628/r/il/80c7ba/4773873459/il_570xN.4773873459_rr8o.jpg">
+                <img src="https://i.etsystatic.com/40676628/r/il/80c7ba/4773873459/il_570xN.4773873459_rr8o.jpg" alt="Imagem 5">
+            </a>
+            <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtVLYFySNDPHKyxgLzj0goXkSJSQSYD3SdFgGAHePTAOPec_8TLnzunPHlD5js5j_2yzhnX9FcW8Y-y1SMBO0jUcBBUJKJmRNfTOcS1CfTzz26Aim4cSwAfm6q35viRwWP7H1B1QZY6wnS3GwZ4Gi6aWsnyJCfUReRdSGIg_lWRH8KpXp9g2E4ce7ftg/s814/Z.jpg">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtVLYFySNDPHKyxgLzj0goXkSJSQSYD3SdFgGAHePTAOPec_8TLnzunPHlD5js5j_2yzhnX9FcW8Y-y1SMBO0jUcBBUJKJmRNfTOcS1CfTzz26Aim4cSwAfm6q35viRwWP7H1B1QZY6wnS3GwZ4Gi6aWsnyJCfUReRdSGIg_lWRH8KpXp9g2E4ce7ftg/s814/Z.jpg" alt="Imagem 6">
+            </a>
+             <a href="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/12/Tunic42.jpg">
+                <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/12/Tunic42.jpg" alt="Imagem 7">
+            </a>
+             <a href="https://assetsio.gnwcdn.com/tunic-chega-hoje-ao-xbox-game-pass-1647452391705.jpg?width=1200&height=1200&fit=crop&quality=100&format=png&enable=upscale&auto=webp">
+                <img src="https://assetsio.gnwcdn.com/tunic-chega-hoje-ao-xbox-game-pass-1647452391705.jpg?width=1200&height=1200&fit=crop&quality=100&format=png&enable=upscale&auto=webp" alt="Imagem 8">
+            </a>
         </div>
-    </main>
-    <script src="script.js"></script>
+    </div>
+</main>
+   
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
+
