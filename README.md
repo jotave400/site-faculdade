@@ -1,4 +1,4 @@
-(ACESSAR SITE) https://jotave400.github.io/site-faculdade/
+(ACESSAR SITE) ->  https://jotave400.github.io/site-faculdade/
 
 
 1- PERIODO DO CURSO SISTEMA DA INFORMAÇÃO
